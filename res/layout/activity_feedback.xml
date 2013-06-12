@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/header" >
+
+        <ImageButton
+            android:id="@+id/header_back_btn"
+            style="@style/header_image_btn"
+            android:background="@drawable/back_btn"
+            android:onClick="start_activity" />
+
+        <TextView
+            style="@style/header_text"
+            android:text="反馈"
+            android:textColor="@color/yellow_txt" />
+
+        <ImageButton
+            style="@style/header_image_btn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/et_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="有啥建议呀"
+            android:maxLines="25"
+            android:minLines="10"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_shadow" >
+        </ImageView>
+    </FrameLayout>
+
+</LinearLayout>

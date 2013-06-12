@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/header" >
+
+        <ImageButton
+            android:id="@+id/header_back_btn"
+            style="@style/header_image_btn"
+            android:background="@drawable/back_btn"
+            android:onClick="start_activity" />
+
+        <TextView
+            android:textColor="@color/yellow_txt"
+            style="@style/header_text"
+            android:text="关于" />
+
+        <ImageButton
+            style="@style/header_image_btn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/about_us" />
+
+</LinearLayout>

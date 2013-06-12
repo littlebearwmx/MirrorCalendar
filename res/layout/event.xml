@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/point" />
+
+    <ImageView
+        android:clickable="true"
+         android:id="@+id/date_icon"
+        android:onClick="start_activity" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/event_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/point" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="肯尼亚空难"
+        android:textColor="@color/yellow_txt"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/chinese_day_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="2007年5月5日发生"
+        android:textColor="@color/yellow_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/day_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2007年5月5日，肯尼亚航空公司一架载有114人的波音737-800飞机坠毁，机上有5名中国人。"
+        android:textColor="@color/white_txt"
+        android:textSize="16sp" />
+
+</LinearLayout>

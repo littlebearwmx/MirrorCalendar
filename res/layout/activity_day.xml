@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/header" >
+
+        <ImageButton
+            android:id="@+id/face_btn"
+            style="@style/header_image_btn"
+            android:background="@drawable/face_btn"
+            android:onClick="headerTabClick" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/header_btn_group"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" >
+
+                <ImageButton
+                    android:id="@+id/day_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/day_btn"
+                    android:onClick="headerTabClick" />
+
+                <ImageButton
+                    android:id="@+id/person_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/person_btn"
+                    android:onClick="headerTabClick" />
+
+                <ImageButton
+                    android:id="@+id/event_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/event_btn"
+                    android:onClick="headerTabClick" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/header_cursor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/yellow_txt" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/more_btn"
+            style="@style/header_image_btn"
+            android:background="@drawable/seemore_btn"
+            android:onClick="start_activity" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_shadow" >
+        </ImageView>
+    </FrameLayout>
+
+</LinearLayout>

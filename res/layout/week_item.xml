@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/week_item_bg"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/week_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="05"
+            android:textColor="@color/white_txt"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/week_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/week_item"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/week_item"
+            android:textColor="@color/white_txt"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/week_name"
+            android:layout_below="@id/week_name"
+            android:text="三月廿四"
+            android:textColor="@color/white_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/the_day_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:text="端\n午\n节"
+            android:textColor="@color/yellow_txt"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/week_item"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/like_devidingline" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/timeline_2" />
+
+    <ImageView
+        android:id="@+id/day_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="30dp" />
+
+</FrameLayout>

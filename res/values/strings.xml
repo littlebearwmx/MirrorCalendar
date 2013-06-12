@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mirror</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="product_tab">Day</string>
+    <string name="feed_tab">Week</string>
+    <string name="message_tab">Month</string>
+    <string name="more_tab">Year</string>
+    <string name="title_activity_day">DayActivity</string>
+    <string name="title_activity_week">WeekActivity</string>
+    <string name="title_activity_mnth">MnthActivity</string>
+    <string name="title_activity_year">YearActivity</string>
+    <string name="title_activity_like">LikeActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+</resources>

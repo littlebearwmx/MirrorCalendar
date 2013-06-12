@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/point" />
+
+    <ImageView
+        android:id="@+id/date_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/people_bg"
+        android:clickable="true"
+        android:onClick="start_activity" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/point" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡尔·马克思"
+        android:textColor="@color/yellow_txt"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/chinese_day_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="1818年5月5日诞辰"
+        android:textColor="@color/yellow_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/day_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡尔·海因里希·马克思，早期在中国被译为麦喀士，马克思主义创始人。犹太裔德国人，政治学家、哲学家、经济学家、社会学家、革命理论家、记者、历史学者、革命社会主义者。"
+        android:textColor="@color/white_txt"
+        android:textSize="16sp" />
+
+</LinearLayout>

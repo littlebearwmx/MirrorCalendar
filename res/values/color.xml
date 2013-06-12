@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="basic_red">#EA4C89</color>
+    <color name="basic_blue">#1D88B4</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#999999</color>
+    <color name="deep_gray">#666666</color>
+    <color name="black">#000000</color>
+    <color name="none">#00000000</color>
+    <color name="vi_blue">#32b9b4</color>
+    <color name="vi_pink">#f07d9b</color>
+    <color name="vi_brown">#f07d9b</color>
+    <color name="vi_l_gray">#919191</color>
+    <color name="vi_m_gray">#585858</color>
+    <color name="vi_h_gray">#4b4b4b</color>
+    <color name="more_btn_pressed">#141311</color>
+    <color name="more_btn_normal">#1F1F1C</color>
+    <color name="comment_pressed">#AAA</color>
+    <color name="comment_normal">#F0F2F5</color>
+    <color name="brown_bg">#373732</color> 
+    <color name="yellow_txt">#d9b50d</color>
+    <color name="gray_txt">#a2a096</color>
+    <color name="white_txt">#f6f5e0</color>
+
+</resources>

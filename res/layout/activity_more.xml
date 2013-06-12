@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/header" >
+
+        <ImageButton
+            android:id="@+id/header_back_btn"
+            style="@style/header_image_btn"
+            android:background="@drawable/back_btn"
+            android:onClick="start_activity" />
+
+        <TextView
+            style="@style/header_text"
+            android:text="更多"
+            android:textColor="@color/yellow_txt" />
+
+        <ImageButton
+            style="@style/header_image_btn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout style="@style/more_btn_group" >
+
+                    <LinearLayout
+                        android:id="@+id/personal_center_btn"
+                        style="@style/more_btn"
+                        android:background="@drawable/setting_single_item" >
+
+                        <ImageView
+                            style="@style/more_btn_icon"
+                            android:background="@drawable/like_icon" />
+
+                        <TextView
+                            style="@style/more_btn_text"
+                            android:text="收藏" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/more_btn_group" >
+
+                    <LinearLayout
+                        android:id="@+id/invite_friend_btn"
+                        style="@style/more_btn"
+                        android:background="@drawable/setting_top_item" >
+
+                        <ImageView
+                            style="@style/more_btn_icon"
+                            android:background="@drawable/share_icon" />
+
+                        <TextView
+                            style="@style/more_btn_text"
+                            android:text="分享给好友" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/more_btn_divider" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/feedback_btn"
+                        style="@style/more_btn"
+                        android:background="@drawable/setting_item" >
+
+                        <ImageView
+                            style="@style/more_btn_icon"
+                            android:background="@drawable/feed" />
+
+                        <TextView
+                            style="@style/more_btn_text"
+                            android:text="反馈" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/more_btn_divider" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/user_guide_btn"
+                        style="@style/more_btn"
+                        android:background="@drawable/setting_item" >
+
+                        <ImageView
+                            style="@style/more_btn_icon"
+                            android:background="@drawable/help_icon" />
+
+                        <TextView
+                            style="@style/more_btn_text"
+                            android:text="新手引导" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/more_btn_divider" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_btn"
+                        style="@style/more_btn"
+                        android:background="@drawable/setting_bottom_item" >
+
+                        <ImageView
+                            style="@style/more_btn_icon"
+                            android:background="@drawable/about_icon" />
+
+                        <TextView
+                            style="@style/more_btn_text"
+                            android:text="关于我们" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/more_btn_group" >
+
+                    <LinearLayout
+                        android:id="@+id/logout_btn"
+                        style="@style/more_btn"
+                        android:background="@drawable/setting_single_item" >
+
+                        <ImageView
+                            style="@style/more_btn_icon"
+                            android:background="@drawable/out_icon" />
+
+                        <TextView
+                            style="@style/more_btn_text"
+                            android:text="退出" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" 
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mirror_up"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="10dp"
+                android:text="以史为鉴 可明得失"
+                android:textColor="@color/yellow_txt"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_shadow" >
+        </ImageView>
+    </FrameLayout>
+
+</LinearLayout>

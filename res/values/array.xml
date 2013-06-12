@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pick_image_items">
+        <item>相册</item>
+        <item>拍照</item>
+    </string-array>
+    <string-array name="product_popup_menu">
+        <item>最 新</item>
+        <item>最 热</item>
+        <item>搜 索</item>
+    </string-array>
+    <string-array name="friend_popup_menu">
+        <item>刷 新</item>
+    </string-array>
+    <string-array name="create_feed_popup_menu">
+        <item>清 空</item>
+    </string-array>
+    <string-array name="send_popup_menu">
+        <item>全 选</item>
+        <item>反 选</item>
+    </string-array>
+    <string-array name="spinner_for_point">
+        <item>0 颗</item>
+        <item>1 颗</item>
+        <item>2 颗</item>
+        <item>3 颗</item>
+        <item>4 颗</item>
+        <item>5 颗</item>
+    </string-array>
+    <string-array name="spinner_for_catalog">
+        <item>书籍</item>
+        <item>娱乐</item>
+        <item>学习</item>
+        <item>女生</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="friend_item_options">
+        <item>私信</item>
+    </string-array>
+    <string-array name="feed_options">
+        <item>评论</item>
+        <item>举报</item>
+    </string-array>
+    <string-array name="message_options">
+        <item>复制</item>
+    </string-array>
+    <string-array name="chatlist_options">
+        <item>访问Ta</item>
+    </string-array>
+    <string-array name="noticelist_options">
+        <item>删除记录</item>
+    </string-array>
+    <string-array name="comment_options">
+        <item>复制</item>
+        <item>举报</item>
+    </string-array>
+
+</resources>

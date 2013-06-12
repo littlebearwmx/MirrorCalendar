@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mood"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/face_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/sogood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/sogood_anim"
+            android:onClick="faceTabClick" />
+
+        <ImageButton
+            android:id="@+id/good"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/good_anim"
+            android:onClick="faceTabClick" />
+
+        <ImageButton
+            android:id="@+id/notbad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/notbad_anim"
+            android:onClick="faceTabClick" />
+
+        <ImageButton
+            android:id="@+id/sad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/sad_anim"
+            android:onClick="faceTabClick" />
+
+        <ImageButton
+            android:id="@+id/sosad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/sosad_anim"
+            android:onClick="faceTabClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/face_tab_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cursor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/words_box_bg"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/feed_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/words_box"
+            android:hint="今天过得怎么样?"
+            android:maxLines="4"
+            android:minHeight="45dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/enter_btn"
+            android:onClick="addFeed" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/feed_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/empty"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/empty"
+        android:scrollbars="none" />
+
+</LinearLayout>

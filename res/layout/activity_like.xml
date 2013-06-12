@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_wrapper"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/header" >
+
+        <ImageButton
+            android:id="@+id/header_back_btn"
+            style="@style/header_image_btn"
+            android:background="@drawable/back_btn"
+            android:onClick="start_activity" />
+
+        <TextView
+            style="@style/header_text"
+            android:text="收藏"
+            android:textColor="@color/yellow_txt" />
+
+        <ImageButton
+            style="@style/header_image_btn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/like_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/empty"
+            android:paddingRight="40dp"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_shadow" >
+        </ImageView>
+    </FrameLayout>
+
+</LinearLayout>
