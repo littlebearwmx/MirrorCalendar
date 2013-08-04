@@ -369,7 +369,8 @@ public class DayActivity extends Activity implements IScrollListener {
 		Resources resources = this.getResources();
 
 		Drawable btnDrawable = resources.getDrawable(resId);
-		v.setBackground(btnDrawable);
+		v.setBackgroundDrawable(btnDrawable);
+		//v.setBackground(btnDrawable);
 
 		AnimationDrawable animationDrawable = (AnimationDrawable) v
 				.getBackground();
